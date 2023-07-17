@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="$CFILE"; OUTPUT_FILE="${CFILE%.C}.O"; gcc -c"$CFILE" -o"$CFILE.O"; export CFILE="$OUTPUT_FILE"; ./1-compiler
+gcc -c"$CFILE" -o"${CFILE%.c}".o
